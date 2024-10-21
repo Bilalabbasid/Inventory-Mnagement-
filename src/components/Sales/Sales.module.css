@@ -1,0 +1,223 @@
+.salesList {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Ensure children don't overflow */
+}
+
+.heading {
+  font-size: 2em; /* Large heading size */
+  margin-bottom: 20px; /* Space below heading */
+  text-align: center; /* Center text */
+  color: #333; /* Dark color for contrast */
+  font-weight: bold; /* Bold text */
+}
+
+.error {
+  color: red; /* Red for error messages */
+  text-align: center; /* Center text */
+  margin-bottom: 15px; /* Space below error */
+}
+
+.recordSale {
+  margin-bottom: 30px; /* Space below each sale record */
+  padding: 15px; /* Padding for content */
+  background-color: #e9f5ee; /* Light green background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.recordSale h3 {
+  margin-bottom: 10px; /* Space below heading */
+  color: #444; /* Darker color for heading */
+}
+
+.input {
+  display: block; /* Block display for inputs */
+  width: calc(100% - 10px); /* Full width minus padding */
+  padding: 10px; /* Inner padding */
+  margin: 5px 0; /* Space around inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1em; /* Base font size */
+  transition: border-color 0.3s ease; /* Transition effect */
+}
+
+.input:focus {
+  border-color: #4caf50; /* Green border on focus */
+}
+
+.createButton {
+  background-color: #4caf50; /* Green button color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1em; /* Button font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.createButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.salesList {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.saleCard {
+  background-color: #fff; /* White background for sale card */
+  padding: 15px; /* Inner padding */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px; /* Space between cards */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  transition: box-shadow 0.3s ease; /* Transition for shadow effect */
+}
+
+.saleCard:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.buttonGroup {
+  display: flex; /* Flexbox for buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.updateButton {
+  background-color: #2196f3; /* Blue button color */
+  color: white; /* White text */
+  padding: 8px 12px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 0.9em; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.updateButton:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.deleteButton {
+  background-color: #f44336; /* Red button color */
+  color: white; /* White text */
+  padding: 8px 12px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 0.9em; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.updateMenu {
+  margin-top: 10px; /* Space above update menu */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack vertically */
+  border-top: 1px solid #ddd; /* Top border */
+  padding-top: 10px; /* Padding above content */
+}
+
+.saveButton {
+  background-color: #ffc107; /* Yellow button color */
+  color: white; /* White text */
+  padding: 8px 12px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 0.9em; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.saveButton:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Styles for total price and additional elements */
+.totalPrice {
+  font-weight: bold; /* Bold text for total price */
+  color: #333; /* Dark color for contrast */
+}
+
+.saleInfo {
+  flex-grow: 1; /* Take available space */
+}
+
+.saleDetails {
+  font-size: 0.9em; /* Smaller font size for details */
+  color: #555; /* Slightly lighter color */
+  margin-bottom: 5px; /* Space below each detail */
+}
+
+@media (max-width: 600px) {
+  .saleCard {
+      flex-direction: column; /* Stack elements on small screens */
+      align-items: flex-start; /* Align items to the start */
+  }
+  
+  .buttonGroup {
+      width: 100%; /* Full width for button group */
+      justify-content: space-between; /* Adjust button spacing on small screens */
+  }
+}
+
+.exportButtons {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the buttons */
+  margin-top: 10px; /* Add margin above */
+  margin-bottom: 20px; /* Add margin below */
+}
+
+.saleData {
+  font-size: 1em; /* Font size for sale data */
+  color: #333; /* Text color */
+  margin-bottom: 5px; /* Space below each data line */
+}
+
+.saleData span {
+  display: inline-block; /* Allow inline elements to stack */
+  margin-right: 10px; /* Space between items */
+}
+
+.saleData span.label {
+  font-weight: bold; /* Make labels bold */
+}
+
+.saleData span.value {
+  color: #555; /* Slightly lighter color for values */
+}
+
+.exportButton {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1em; /* Font size */
+  margin: 0 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.exportButton:hover {
+  background-color: #3aec04; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.exportButton:active {
+  background-color: #004494; /* Even darker on active */
+}

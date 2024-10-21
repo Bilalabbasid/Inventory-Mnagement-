@@ -1,0 +1,116 @@
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.stages-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stage-card {
+    background-color: #fff;
+    border: 2px solid #2980b9; /* Blue border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 30%; /* Adjust width for better spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover */
+}
+
+.stage-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Animation for hover */
+}
+
+.card:hover {
+    background-color: #e1f5fe; /* Light blue background on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.chart-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+/* Different colors for stage cards */
+.stage-card:nth-child(1) {
+    background-color: #ffcccc; /* Light red */
+}
+
+.stage-card:nth-child(2) {
+    background-color: #ccffcc; /* Light green */
+}
+
+.stage-card:nth-child(3) {
+    background-color: #ccccff; /* Light blue */
+}
+
+/* Different colors for cards */
+.card:nth-child(1) {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.card:nth-child(2) {
+    background-color: #4caf50; /* Green */
+}
+
+.card:nth-child(3) {
+    background-color: #2196f3; /* Blue */
+}
+
+.card:nth-child(4) {
+    background-color: #ff9800; /* Orange */
+}
+
+.card:nth-child(5) {
+    background-color: #9c27b0; /* Purple */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stages-container {
+        flex-direction: column; /* Stack stage cards on smaller screens */
+    }
+
+    .stage-card {
+        width: 100%; /* Full width for stage cards on small screens */
+        margin-bottom: 20px; /* Space between stage cards */
+    }
+}

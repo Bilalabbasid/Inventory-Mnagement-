@@ -1,0 +1,141 @@
+.customersList {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Vibrant gradient background */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #333; /* Dark text for contrast */
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  margin-bottom: 20px;
+  color: #333; /* Consistent heading color */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.error {
+  color: #f44336; /* Red for error messages */
+  text-align: center;
+  font-weight: bold; /* Bold text for errors */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.createCustomer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between elements */
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 2px solid #feb47b; /* Border matching the gradient */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #ff7e5f; /* Focused border color */
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 126, 95, 0.3); /* Glow effect on focus */
+}
+
+.createButton {
+  background-color: #ff7e5f; /* Vibrant button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.createButton:hover {
+  background-color: #feb47b; /* Lighter button on hover */
+  transform: translateY(-3px); /* Consistent hover effect */
+}
+
+.customerList {
+  list-style: none;
+  padding: 0;
+}
+
+.customerCard {
+  background-color: #333; /* Dark background for the card */
+  color: white; /* White text for contrast */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customerName {
+  cursor: pointer; /* Cursor to indicate clickable item */
+  color: #007bff; /* Change text color to indicate clickability */
+  transition: color 0.3s ease;
+}
+
+.customerName:hover {
+  color: #0056b3; /* Darker on hover */
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+}
+
+.updateButton {
+  background-color: #ffca28; /* Color for update button */
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.updateButton:hover {
+  background-color: #e0a800; /* Darker on hover */
+}
+
+.deleteButton {
+  background-color: #e57373; /* Color for delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.deleteButton:hover {
+  background-color: #c82333; /* Darker on hover */
+}
+
+.updateMenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.saveButton {
+  background-color: #4caf50; /* Green for save button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.saveButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

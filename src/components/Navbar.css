@@ -1,0 +1,77 @@
+/* Navbar styles */
+.navbar {
+    background-color: #343a40; /* Dark background for a sleek look */
+    height: 60px; /* Height of the navbar */
+    padding: 0 20px; /* Side padding */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.navbar:hover {
+    background-color: #495057; /* Darker grey on hover */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal alignment */
+    width: 100%; /* Full width for nav links */
+    justify-content: space-around; /* Evenly space items */
+}
+
+.nav-links li {
+    flex: 1; /* Each item takes up equal space */
+    text-align: center; /* Center align text */
+}
+
+/* Links styling */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #f8f9fa; /* Light color for contrast */
+    font-size: 16px; /* Increased font size */
+    padding: 10px 0; /* Vertical padding for click area */
+    font-weight: 600; /* Bold text */
+    display: block; /* Block for full clickable area */
+    position: relative; /* For pseudo-element */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition and scaling */
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    color: #ffca28; /* Bright yellow on hover for contrast */
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Underline animation */
+.nav-links a::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position relative to the link */
+    left: 50%; /* Start from the center */
+    bottom: -5px; /* Position slightly below the text */
+    width: 0; /* Start with 0 width */
+    height: 2px; /* Height of the underline */
+    background-color: #ffca28; /* Color of the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* Animation for width and position */
+}
+
+/* Expand underline on hover */
+.nav-links a:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 0; /* Align to the left */
+}
+
+/* Icon styles */
+.nav-links .icon {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 18px; /* Larger icon */
+    color: #ffca28; /* Icon color to match the hover effect */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change icon color on hover */
+.nav-links a:hover .icon {
+    color: #ffffff; /* Change icon color on hover */
+}

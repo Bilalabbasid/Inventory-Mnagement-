@@ -1,0 +1,86 @@
+/* Standardized Button Styles */
+button, .createButton, .exportButton, .submitButton, .viewButton, .updateButton, .deleteButton, .invoiceButton, .saveButton {
+  padding: 10px 20px; /* Standardized padding for all buttons */
+  font-size: 1rem; /* Consistent font size */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners for consistency */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: white; /* White text for all buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover */
+}
+
+/* Hover Effect Consistency: translateY */
+button:hover, .createButton:hover, .exportButton:hover, .submitButton:hover, .viewButton:hover, .updateButton:hover, .deleteButton:hover, .invoiceButton:hover, .saveButton:hover {
+  transform: translateY(-3px); /* Uniform hover lift effect */
+}
+
+/* Button Color Schemes */
+.createButton {
+  background-color: #5c67f2; /* Primary button color */
+}
+
+.createButton:hover {
+  background-color: #4753c8; /* Darker shade on hover */
+}
+
+.exportButton {
+  background-color: #34a853; /* Green button */
+}
+
+.exportButton:hover {
+  background-color: #2e8a44; /* Darker green on hover */
+}
+
+.submitButton {
+  background-color: #ff7e5f; /* Orange button */
+}
+
+.submitButton:hover {
+  background-color: #feb47b; /* Lighter orange on hover */
+}
+
+.viewButton {
+  background-color: #007bff; /* Blue button */
+}
+
+.viewButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.updateButton {
+  background-color: #ffc107; /* Yellow button */
+}
+
+.updateButton:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Red button */
+}
+
+.deleteButton:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.invoiceButton {
+  background-color: #ff5722; /* Bright red button */
+}
+
+.invoiceButton:hover {
+  background-color: #e64a19; /* Darker red on hover */
+}
+
+.saveButton {
+  background-color: #4caf50; /* Green button for save */
+}
+
+.saveButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Disabled Button Style (consistent across all buttons) */
+button:disabled, .createButton:disabled, .submitButton:disabled, .viewButton:disabled, .updateButton:disabled, .deleteButton:disabled {
+  background-color: #ccc; /* Gray for disabled buttons */
+  cursor: not-allowed; /* Not allowed cursor */
+}

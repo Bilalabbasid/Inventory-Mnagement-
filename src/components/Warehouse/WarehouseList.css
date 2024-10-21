@@ -1,0 +1,147 @@
+/* Overall container styling */
+.warehouse-list {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f0f4f8; /* Subtle background color */
+  border-radius: 10px; /* Rounded corners for the container */
+}
+
+/* Main heading styling */
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50; /* Darker color for better contrast */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Card grid layout */
+.warehouse-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Individual card styling */
+.warehouse-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transition effects */
+  border: none; /* Removed border for a cleaner look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Different color styles for cards */
+.warehouse-card.red {
+  background: #e74c3c; /* Red */
+  color: #fff; /* White text for contrast */
+}
+
+.warehouse-card.green {
+  background: #2ecc71; /* Green */
+  color: #fff; /* White text for contrast */
+}
+
+.warehouse-card.orange {
+  background: #f39c12; /* Orange */
+  color: #fff; /* White text for contrast */
+}
+
+.warehouse-card.blue {
+  background: #3498db; /* Blue */
+  color: #fff; /* White text for contrast */
+}
+
+.warehouse-card.purple {
+  background: #9b59b6; /* Purple */
+  color: #fff; /* White text for contrast */
+}
+
+.warehouse-card.yellow {
+  background: #f1c40f; /* Yellow */
+  color: #333; /* Dark text for better readability */
+}
+
+/* Hover effects for each card */
+.warehouse-card.red:hover {
+  background: #c0392b; /* Darker red */
+}
+
+.warehouse-card.green:hover {
+  background: #27ae60; /* Darker green */
+}
+
+.warehouse-card.orange:hover {
+  background: #e67e22; /* Darker orange */
+}
+
+.warehouse-card.blue:hover {
+  background: #2980b9; /* Darker blue */
+}
+
+.warehouse-card.purple:hover {
+  background: #8e44ad; /* Darker purple */
+}
+
+.warehouse-card.yellow:hover {
+  background: #f39c12; /* Darker yellow */
+}
+
+/* Content styling within the card */
+.warehouse-content {
+  text-align: center;
+}
+
+/* Heading inside card */
+.warehouse-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: 700; /* Bolder font weight */
+  text-transform: uppercase;
+  letter-spacing: 0.5px; /* Slightly reduced spacing */
+}
+
+/* Description inside card */
+.warehouse-card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .warehouse-cards {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .warehouse-cards {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+.warehouse-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center; /* Center the last two boxes */
+}
+
+/* Center the last two boxes */
+.warehouse-card {
+  grid-column: span 1; /* Allow each card to take one column */
+}
+
+.warehouse-card:nth-last-child(-n+2) {
+  grid-column: span 2; /* Span the last two boxes across two columns */
+  justify-self: center; /* Center the last two boxes */
+}

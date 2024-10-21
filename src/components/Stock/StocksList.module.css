@@ -1,0 +1,109 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .stockList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .stockItem {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stockName {
+    font-weight: bold;
+  }
+  
+  .viewButton, .deleteButton, .editButton, .updateButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+  }
+  
+  .editButton {
+    background-color: #ffc107;
+  }
+  
+  .viewButton:hover, .deleteButton:hover, .editButton:hover, .updateButton:hover {
+    opacity: 0.8;
+  }
+  
+  .formTitle {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .addButton {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .addButton:hover {
+    opacity: 0.8;
+  }
+  
+  .selectedStock {
+    margin-top: 30px;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .editForm {
+    margin-top: 10px;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

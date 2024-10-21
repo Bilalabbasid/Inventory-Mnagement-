@@ -1,0 +1,151 @@
+.invoiceContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.invoiceContainer:hover {
+    transform: scale(1.02);
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.createInvoice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.input:focus {
+    border-color: #5c67f2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(92, 103, 242, 0.3);
+}
+
+.createButton, .exportButton, .invoiceButton {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Consistent primary button styles */
+.createButton {
+    background-color: #5c67f2;
+}
+
+.createButton:hover {
+    background-color: #4753c8;
+    transform: translateY(-3px);
+}
+
+.createButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Consistent export button styles */
+.exportButton {
+    background-color: #34a853;
+}
+
+.exportButton:hover {
+    background-color: #2e8a44;
+    transform: translateY(-3px);
+}
+
+/* Consistent invoice button styles */
+.invoiceButton {
+    background-color: #ff5722;
+}
+
+.invoiceButton:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+}
+
+.customerDetails {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.customerDetails h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.invoiceList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.invoiceCard {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.invoiceCard:hover {
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .createInvoice, .exportButtons {
+        flex-direction: column;
+    }
+
+    .input {
+        margin-bottom: 10px;
+    }
+
+    .createButton, .exportButton {
+        width: 100%;
+    }
+}

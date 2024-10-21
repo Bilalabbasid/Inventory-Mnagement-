@@ -1,0 +1,198 @@
+/* Full-screen adjustments */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.meterTypesList {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  max-width: 100%; /* Adjust for full width */
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center contents vertically */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Center content on the screen */
+.container {
+  width: 80%; /* Adjust to control overall width of the content */
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Consistent text color */
+  text-align: center;
+}
+
+.createMeterType {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* More consistent with button styles */
+  flex: 1;
+  max-width: 300px;
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.input:focus {
+  border-color: #5c67f2; /* Primary color focus state */
+  outline: none;
+  box-shadow: 0 0 8px rgba(92, 103, 242, 0.3); /* Similar to button focus effect */
+}
+
+.createButton,
+.viewButton,
+.updateButton,
+.deleteButton {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px; /* More consistent with input styles */
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+}
+
+.createButton {
+  background-color: #5c67f2; /* Primary action color */
+}
+
+.createButton:hover {
+  background-color: #4753c8; /* Darker shade for hover */
+  transform: translateY(-3px); /* Hover effect */
+}
+
+.viewButton {
+  background-color: #007bff;
+}
+
+.viewButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.updateButton {
+  background-color: #ffc107;
+}
+
+.updateButton:hover {
+  background-color: #e0a800;
+  transform: translateY(-3px);
+}
+
+.deleteButton {
+  background-color: #dc3545;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+  transform: translateY(-3px);
+}
+
+.meterTypesList ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Ensure list takes full width */
+}
+
+.meterTypeCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+  width: 80%; /* Adjust to control card width */
+}
+
+.meterTypeCard:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+/* Styles for Update & View menus */
+.updateMenu,
+.fetchedMeterTypeDetails {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide menus by default */
+.updateMenu,
+.fetchedMeterTypeDetails {
+  display: none;
+}
+
+.meterTypeCard.active .updateMenu,
+.meterTypeCard.active .fetchedMeterTypeDetails {
+  display: block; /* Show when active */
+}
+
+.updateMenu input,
+.fetchedMeterTypeDetails p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.updateMenu button {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Animation for smooth appearance */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.updateMenu,
+.fetchedMeterTypeDetails {
+  animation: slideIn 0.3s ease-out;
+}
+
+.fetchedMeterTypeDetails h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fetchedMeterTypeDetails p {
+  font-size: 14px;
+  margin: 0;
+}
